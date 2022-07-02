@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ứng dụng web bt10_register</title>
+        <meta charset="utf-8">
+        <style>
+            .head{
+                text-align: center;
+                border-bottom: 3px solid blue ;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1 style="text-align:center ;">BÀI KIỂM TRA CHƯƠNG 2</h1>
+        <div class="head">
+            <p style="margin:0;"><b>Môn học: </b> <i>Ứng dụng Web</i></p>
+            <p style="margin:0;"><b>Mã số sinh viên: </b> <i>12355</i></p>
+            <p style="margin-top:0;"><b>Họ và tên: </b> <i>Nguyễn Văn A</i></p>
+        </div>
+
+        <div align="center">
+            <p style="display:inline-block; margin-right:10px;"><a href="./bt10-index.html">Trang chủ</a></p>
+            <p style="display:inline-block;"><a href="./bt10-content.html">Nội dung môn học</a></p>
+            <p style="display:inline-block; margin-left:10px;"><a href="./bt10-register.html">Đăng kí</a></p>
+        </div>
+
+        <h2 align="center">ĐĂNG KÍ THAM GIA DIỄN ĐÀN</h2>
+        <form>
+            <table align="center" border="2" cellpadding="3 " cellspacing="2 " style="background-color:yellow ;" >
+                <tr>
+                    <td>Tên đăng nhập</td>
+                    <td><input type="text" placeholder="Tên đăng nhập"></td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu: </td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Giới tính</td>
+                    <td>
+                        <input type="radio" name="sex" value="male" checked> Nam
+                        <input type="radio" name="sex" value="female">Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="date">Ngày sinh</label></td>
+                    <td>
+                        <input type="date" id="date">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+
+                <tr>
+                    <td>Ngôn ngữ lập trình yêu thích nhất</td>
+                    <td>
+                        <select name="selLanguegeDev">
+                            <option value="c++">C++</option>
+                            <option value="c#">C#</option>
+                            <option value="php">PHP</option>
+                            <option value="java">Java</option>
+                            <option value="py">Python</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Quy định khi tham gia biễu diễn</td>
+                    <td><textarea id="rule" cols="30" rows="4">Bài viết phải nghiêm túc không chứa quảng cáo, không nội dung phản cảm</textarea></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Đăng kí">
+                        <input type="reset" value="Hủy" >
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+
+    </body>
+</html>
